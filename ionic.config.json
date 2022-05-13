@@ -1,0 +1,7 @@
+{
+  "name": "ThirdDisc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
