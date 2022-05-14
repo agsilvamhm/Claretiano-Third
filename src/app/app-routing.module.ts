@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'bebidas',
     loadChildren: () => import('./pages/bebidas/bebidas.module').then( m => m.BebidasPageModule)
   },
+  {
+    path: 'sobremesa',
+    loadChildren: () => import('./pages/sobremesa/sobremesa.module').then( m => m.SobremesaPageModule)
+  },
+  {
+    path: 'prato-dia',
+    loadChildren: () => import('./pages/prato-dia/prato-dia.module').then( m => m.PratoDiaPageModule)
+  },
 ];
 
 @NgModule({
