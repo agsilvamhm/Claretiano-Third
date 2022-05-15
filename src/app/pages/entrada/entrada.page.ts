@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
 import { DadosService } from 'src/app/service/dados.service';
+import { Idados } from 'src/app/models/Idados.models';
 
 @Component({
   selector: 'app-entrada',
@@ -17,7 +18,8 @@ export class EntradaPage implements OnInit {
   ngOnInit() {
   }
 
-  async showEntradas(objeto: any){
-    this.route.navigateByUrl(objeto.url);
-  }
+  async showRegistro(objeto: Idados){
+    this.dados.atualizarDados(objeto);
+    this.route.navigateByUrl('exibir');
+}
 }

@@ -6,10 +6,10 @@ import { Idados } from '../models/Idados.models';
 })
 export class DadosService {
   bebidas: Idados[];
-  lanches: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
-  sobremesas: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
-  entradas: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
-  pratos: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
+  lanches: Idados[];
+  sobremesas: Idados[];
+  entradas: Idados[];
+  pratos: Idados[];
   registro: Idados;
 
 
@@ -21,18 +21,18 @@ export class DadosService {
        {nome:'Chicletinho', valor: 'R$ 8,00', mensagem:'Aguardente com sabores', url:'/assets/imagens/bebidas/Bebida-4.jpg'},
        {nome:'Boa vida', valor: 'R$ 8,00', mensagem:'Whisk + vinho do porto', url:'/assets/imagens/bebidas/Bebida-5.jpg'}];
 
-       this.lanches=[{nome:'Presuntão', valor:'R$ 10,00', mensagem:'', url:'/assets/imagens/lanches/Lanche-1.jpg'},
-       {nome:'Crocante', valor:'R$ 15,00', mensagem:'', url:'/assets/imagens/lanches/Lanche-2.jpg'},
-       {nome:'Combo Master', valor:'R$ 15,00', mensagem:'', url:'/assets/imagens/lanches/Lanche-3.jpg'},
-       {nome:'Nordestino', valor:'R$ 12,00', mensagem:'', url:'/assets/imagens/lanches/Lanche-4.jpg'},
-       {nome:'Submarino', valor:'R$ 15,00', mensagem:'', url:'/assets/imagens/lanches/Lanche-5.jpg'},
+       this.lanches=[{nome:'Presuntão', valor:'R$ 10,00', mensagem:'Pão +hamburgue + Presunto', url:'/assets/imagens/lanches/Lanche-1.jpg'},
+       {nome:'Crocante', valor:'R$ 15,00', mensagem:'Pão + Baycon + Hamburgue', url:'/assets/imagens/lanches/Lanche-2.jpg'},
+       {nome:'Combo Master', valor:'R$ 15,00', mensagem:'Pão com super Hamburgue', url:'/assets/imagens/lanches/Lanche-3.jpg'},
+       {nome:'Nordestino', valor:'R$ 12,00', mensagem:'Pão + Carne de sol + Queijo', url:'/assets/imagens/lanches/Lanche-4.jpg'},
+       {nome:'Submarino', valor:'R$ 15,00', mensagem:'Pão + Frango + Salada', url:'/assets/imagens/lanches/Lanche-5.jpg'},
       ];
 
-      this.sobremesas=[{nome:'Napolitano de morango', valor:'R$ 5,00', mensagem:'', url:'/assets/imagens/sobremesas/Sobremesa-1.jpg'},
-      {nome:'Pudim', valor:'R$ 4,00', mensagem:'', url:'/assets/imagens/sobremesas/Sobremesa-2.jpg'},
-      {nome:'Napolitano', valor:'R$ 5,00', mensagem:'', url:'/assets/imagens/sobremesas/Sobremesa-3.jpg'},
-      {nome:'Biz com Leite condensado', valor:'R$ 4,00', mensagem:'', url:'/assets/imagens/sobremesas/Sobremesa-4.png'},
-      {nome:'Torta de limão', valor:'R$ 5,00', mensagem:'', url:'/assets/imagens/sobremesas/torta-limao.jpg'},
+      this.sobremesas=[{nome:'Napolitano', valor:'R$ 5,00', mensagem:'Pudim de morango', url:'/assets/imagens/sobremesas/Sobremesa-1.jpg'},
+      {nome:'Pudim', valor:'R$ 4,00', mensagem:'pudin de balnilha', url:'/assets/imagens/sobremesas/Sobremesa-2.jpg'},
+      {nome:'Napolitano extra', valor:'R$ 5,00', mensagem:'Pudim dois sabores', url:'/assets/imagens/sobremesas/Sobremesa-3.jpg'},
+      {nome:'Biz extra', valor:'R$ 4,00', mensagem:'Biz com Leite condensado', url:'/assets/imagens/sobremesas/Sobremesa-4.png'},
+      {nome:'Torta de limão', valor:'R$ 5,00', mensagem:'Torta de limão', url:'/assets/imagens/sobremesas/torta-limao.jpg'},
      ];
 
      this.entradas=[{nome:'Pão recheado com tomate ao forno', valor:'R$ 10,00', mensagem:'', url:'/assets/imagens/entradas/Entrada-1.webp'},

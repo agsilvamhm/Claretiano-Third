@@ -18,7 +18,7 @@ export class BebidasPage implements OnInit {
   ngOnInit() {
   }
 
-  async showBebida(objeto: Idados){
+  async showRegistro(objeto: Idados){
       this.dados.atualizarDados(objeto);
       this.route.navigateByUrl('exibir');
   }
