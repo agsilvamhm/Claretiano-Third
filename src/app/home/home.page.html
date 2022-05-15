@@ -7,21 +7,50 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-card>
     <ion-card-header>
       <ion-card-title>Prato do dia</ion-card-title>
       <ion-card-subtitle>Epinafre nordestino</ion-card-subtitle>
-      <img width="80" height="80" src="../Imagem/Primeira-Imagem.PNG"/>
-      <img width="80" height="80" src="/app/Imagem/Primeira-Imagem.PNG"/>
-      <img width="80" height="80" src="C:/Projetos/Claretiano/DesenvDisposMoveis/ThirdDisc/src/app/Imagem/Primeira-Imagem.PNG"/>
-
+      <ion-avatar slot="">
+        <ion-img src= "/assets/CarneDesfiadaMacaxeira.jpg"></ion-img>
+      </ion-avatar>
     </ion-card-header>
 
-    <ion-card-content>
+   <!-- <ion-card-content>
       <p>Não é uma refeição, é uma experiência regional.</p>
-    </ion-card-content>
+    </ion-card-content> -->
   </ion-card>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Bebidas</ion-label>
+      <ion-avatar slot="start">
+        <ion-img  src= "/assets/Bebida-1.jpg"></ion-img>
+      </ion-avatar>
+    </ion-item>
+    <ion-item>
+      <ion-label>Lanches</ion-label>
+      <ion-avatar slot="start">
+        <ion-img  src= "/assets/Lanche-1.jpg"></ion-img>
+      </ion-avatar>
+    </ion-item>
+    <ion-item>
+      <ion-label routerLink="">Sobremesas</ion-label>
+      <ion-avatar slot="start">
+        <ion-img  src="/assets/Sobremesa-4.jpg"></ion-img>
+      </ion-avatar>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pratos</ion-label>
+      <ion-avatar slot="start">
+        <ion-img  src= "/assets/Refeicao-1.jpg"></ion-img>
+      </ion-avatar>
+    </ion-item>
+
+  </ion-list>
+
 </ion-content>
 
 <ion-footer>
