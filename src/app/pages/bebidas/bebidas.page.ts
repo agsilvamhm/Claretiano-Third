@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
+import { DadosService } from 'src/app/service/dados.service';
 
 @Component({
   selector: 'app-bebidas',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bebidas.page.scss'],
 })
 export class BebidasPage implements OnInit {
+  bebidas: any;
 
-  constructor() { }
+  constructor(private dados: DadosService, private route: Router) {
+    this.bebidas = dados.bebidas;
+  }
 
   ngOnInit() {
+  }
+
+  async showBebida(objeto: any){
+      this.route.navigateByUrl(objeto.url);
   }
 
 }

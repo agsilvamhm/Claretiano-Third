@@ -12,10 +12,11 @@ export class AppComponent {
     menu.enable(true);
 
     this.pages = [{title:'Bebidas', url:'bebidas', icon: 'cafe'},
-                  {title:'Lanches', url:'lanches', icon: 'pizza'},
-                  {title:'Pratos: Entradas e refeições', url:'pratos', icon: 'fish'},
-                  {title:'Prato do dia', url:'prato-dia', icon: 'fast-food'},
-                  {title:'Sobremesa', url:'sobremesa', icon: 'ice-cream'}
+                  {title:'Lanches', url:'lanches', icon: 'fast-food'},
+                  {title:'Entradas', url:'entrada', icon: 'beer'},
+                  {title:'Prato do dia', url:'prato-dia', icon: 'fish'},
+                  {title:'Pratos', url:'pratos', icon: 'pizza'},
+                  {title:'Sobremesas', url:'sobremesa', icon: 'ice-cream'}
   ];
  }
 }

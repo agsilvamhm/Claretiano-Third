@@ -8,5 +8,13 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-item-sliding *ngFor="let p of pratos">
+    <ion-item (click)="showPratos(p)">
+      <ion-avatar slot="start">
+        <ion-img [src]="p.url"></ion-img>
+      </ion-avatar>
+        <ion-label>{{p.nome}}</ion-label>
+        <ion-label>{{p.valor}}</ion-label>
+    </ion-item>
+  </ion-item-sliding>
 </ion-content>
