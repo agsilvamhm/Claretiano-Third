@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'prato-dia',
     loadChildren: () => import('./pages/prato-dia/prato-dia.module').then( m => m.PratoDiaPageModule)
   },
+  {
+    path: 'entrada',
+    loadChildren: () => import('./pages/entrada/entrada.module').then( m => m.EntradaPageModule)
+  },
 ];
 
 @NgModule({
