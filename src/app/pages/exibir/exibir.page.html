@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-button>
+    <ion-title>Detalhes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="">
+    <ion-card-header>
+      <img [src]="registro.url" />
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>{{registro.nome}} - <ion-chip color="success">{{registro.valor}}</ion-chip></h1>
+      <p>{{registro.mensagem}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

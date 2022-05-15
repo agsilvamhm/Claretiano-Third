@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Idados } from '../models/Idados.models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DadosService {
-  bebidas: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
+  bebidas: Idados[];
   lanches: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
   sobremesas: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
   entradas: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
   pratos: Array<{nome: string; valor: string;  mensagem: string; url: string}>;
+  registro: Idados;
+
 
   constructor() {
      this.bebidas=[
@@ -45,5 +48,9 @@ export class DadosService {
     {nome:'Frango master chef', valor:'R$ 10,00', mensagem:'', url:'/assets/imagens/pratos/Prato-4.png'},
     {nome:'Peixe estra master', valor:'R$ 12,00', mensagem:'', url:'/assets/imagens/pratos/Prato-5.jpg'},
    ];
+  }
+
+  atualizarDados(dado: Idados){
+    this.registro = dado;
   }
 }

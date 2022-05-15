@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'entrada',
     loadChildren: () => import('./pages/entrada/entrada.module').then( m => m.EntradaPageModule)
   },
+  {
+    path: 'exibir',
+    loadChildren: () => import('./pages/exibir/exibir.module').then( m => m.ExibirPageModule)
+  },
 ];
 
 @NgModule({
