@@ -10,42 +10,42 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Prato do dia</ion-card-title>
-      <ion-card-subtitle>Epinafre nordestino</ion-card-subtitle>
+      <ion-card-title (click)="irPagina('prato-dia')">Prato do dia</ion-card-title>
+      <ion-card-subtitle (click)="irPagina('prato-dia')">Entrada + Refeição + Sobremesa</ion-card-subtitle>
       <ion-avatar slot="">
-        <ion-img src= "/assets/CarneDesfiadaMacaxeira.jpg"></ion-img>
+        <ion-img (click)="irPagina('prato-dia')" src= "/assets/CarneDesfiadaMacaxeira.jpg"></ion-img>
       </ion-avatar>
     </ion-card-header>
 
-   <!-- <ion-card-content>
-      <p>Não é uma refeição, é uma experiência regional.</p>
-    </ion-card-content> -->
+   <ion-card-content>
+      <p>Não é uma refeição, é uma experiência regional, e além de tudo uma super promoção. Confira!</p>
+    </ion-card-content>
   </ion-card>
 
   <ion-list>
 
     <ion-item>
-      <ion-label>Bebidas</ion-label>
+      <ion-label (click)="irPagina('bebidas')">Bebidas</ion-label>
       <ion-avatar slot="start">
-        <ion-img  src= "/assets/Bebida-1.jpg"></ion-img>
+        <ion-img (click)="irPagina('bebidas')" src= "/assets/Bebida-1.jpg"></ion-img>
       </ion-avatar>
     </ion-item>
     <ion-item>
-      <ion-label>Lanches</ion-label>
+      <ion-label (click)="irPagina('lanches')">Lanches</ion-label>
       <ion-avatar slot="start">
-        <ion-img  src= "/assets/Lanche-1.jpg"></ion-img>
+        <ion-img  (click)="irPagina('lanches')" src= "/assets/Lanche-1.jpg"></ion-img>
       </ion-avatar>
     </ion-item>
     <ion-item>
-      <ion-label routerLink="">Sobremesas</ion-label>
+      <ion-label (click)="irPagina('sobremesa')">Sobremesas</ion-label>
       <ion-avatar slot="start">
-        <ion-img  src="/assets/Sobremesa-4.jpg"></ion-img>
+        <ion-img (click)="irPagina('sobremesa')" src="/assets/Sobremesa-4.jpg"></ion-img>
       </ion-avatar>
     </ion-item>
     <ion-item>
-      <ion-label>Pratos</ion-label>
+      <ion-label (click)="irPagina('pratos')">Pratos</ion-label>
       <ion-avatar slot="start">
-        <ion-img  src= "/assets/Refeicao-1.jpg"></ion-img>
+        <ion-img  (click)="irPagina('pratos')" src= "/assets/Refeicao-1.jpg"></ion-img>
       </ion-avatar>
     </ion-item>
 
