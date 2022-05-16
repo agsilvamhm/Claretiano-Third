@@ -22,5 +22,4 @@ export class BebidasPage implements OnInit {
       this.dados.atualizarDados(objeto);
       this.route.navigateByUrl('exibir');
   }
-
 }
